@@ -54,7 +54,7 @@ tenstack/
 3. Set up environment variables
    Create a `.env` file in the root directory with the following variables:
    ```
-   DATABASE_URL=postgresql://username:password@localhost:5432/dbname
+   DB_URL=postgresql://username:password@localhost:5432/dbname
    ```
 
 4. Set up the database
