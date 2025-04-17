@@ -16,7 +16,7 @@ import { getInitialTheme } from "~/lib/theme";
     htmlEl.setAttribute('data-theme', currentTheme);
   } catch (e) {
     // Fallback to winter theme if any errors
-    document.documentElement.setAttribute('data-theme', 'winter');
+    document.documentElement.setAttribute('data-theme', 'light');
   }
 })();
 
