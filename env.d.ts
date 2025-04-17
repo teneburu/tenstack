@@ -11,7 +11,6 @@ interface ImportMeta {
 // For server-side environment variables
 declare namespace NodeJS {
   interface ProcessEnv {
-    readonly SESSION_SECRET: string;
     readonly NODE_ENV: 'development' | 'production' | 'test';
     readonly DB_URL: string;
   }
