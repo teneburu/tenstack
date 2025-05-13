@@ -1,44 +1,19 @@
 {
   "name": "tenstack",
-  "author": "teneburu",
-  "version": "0.0.1",
-  "type": "module",
+  "private": true,
   "scripts": {
-    "dev": "vinxi dev",
-    "build": "vinxi build",
-    "start": "node -r dotenv/config .output/server/index.mjs",
-    "db:generate": "drizzle-kit generate",
-    "db:push": "drizzle-kit push",
-    "db:studio": "drizzle-kit studio",
-    "db:test": "tsx scripts/test-db.ts"
-  },
-  "dependencies": {
-    "@solid-primitives/i18n": "^2.2.0",
-    "@solid-primitives/media": "^2.3.0",
-    "@solid-primitives/storage": "^4.3.1",
-    "@solidjs/meta": "^0.29.4",
-    "@solidjs/router": "^0.15.0",
-    "@solidjs/start": "^1.1.0",
-    "@trpc/client": "^11.1.0",
-    "@trpc/server": "^11.1.0",
-    "@types/pg": "^8.11.13",
-    "drizzle-orm": "^0.42.0",
-    "postgres": "^3.4.5",
-    "solid-devtools": "^0.34.0",
-    "solid-js": "^1.9.5",
-    "vinxi": "^0.5.4",
-    "vite-imagetools": "^7.0.5",
-    "vite-plugin-compression": "^0.5.1",
-    "zod": "^3.24.3"
+    "build": "pnpm -r build",
+    "dev": "node scripts/dev.mjs"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.1.4",
-    "daisyui": "^5.0.23",
-    "drizzle-kit": "^0.31.0",
-    "pg": "^8.14.1",
-    "tailwindcss": "^4.1.4"
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "glob": "^11.0.2",
+    "prettier": "^2.8.8",
+    "typescript": "^5.8.3"
   },
-  "engines": {
-    "node": ">=22"
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "dotenv": "^16.5.0"
   }
 }
